@@ -18,7 +18,7 @@
     />
   </head>
   <body>
-    <div class="container mt-3">
+    <div class="container my-3">
       <h1>Bài tập mảng trong JS</h1>
       <div class="row mt-4">
         <div class="col-6">
@@ -34,12 +34,12 @@
         </div>
       </div>
 
-      <div class="alert alert-secondary mt-2" style="display: none"></div>
-      
+      <div class="alert alert-secondary mt-2" id="arr1" style="display: none"></div>
+
       <div class="row mt-5">
         <div class="col-3 mb-3">
           <button class="btn btn-outline-success me-3" onclick="sumCal()">
-            Tổng số dương
+            1. Tổng số dương
           </button>
         </div>
 
@@ -48,7 +48,7 @@
             class="btn btn-outline-success me-3"
             onclick="countPositiveNumb()"
           >
-            Số lượng số dương
+            2. Số lượng số dương
           </button>
         </div>
 
@@ -57,7 +57,7 @@
             class="btn btn-outline-success me-3"
             onclick="getSmallestNumb()"
           >
-            Số nhỏ nhất
+            3. Số nhỏ nhất
           </button>
         </div>
 
@@ -66,40 +66,95 @@
             class="btn btn-outline-success me-3"
             onclick="getSmallestPositiveNumb()"
           >
-            Số dương nhỏ nhất
+            4. Số dương nhỏ nhất
           </button>
         </div>
 
         <div class="col-3">
-          <button class="btn btn-outline-success me-3"
-          onclick="getLastEven()">
-            Số chẵn cuối cùng
+          <button class="btn btn-outline-success me-3" onclick="getLastEven()">
+            5. Số chẵn cuối cùng
           </button>
         </div>
 
         <div class="col-3">
-          <button class="btn btn-outline-success me-3"
-          onclick="ascendingSort()">
-            Sắp xếp theo thứ tự tăng dần
+          <button
+            class="btn btn-outline-success me-3"
+            onclick="ascendingSort()"
+          >
+            7. Sắp xếp theo thứ tự tăng dần
           </button>
         </div>
 
         <div class="col-3">
-          <button class="btn btn-outline-success me-3"
-          onclick="getFirstPrimeNumb()">
-            Số nguyên tố đầu tiên
+          <button
+            class="btn btn-outline-success me-3"
+            onclick="getFirstPrimeNumb()"
+          >
+            8. Số nguyên tố đầu tiên
           </button>
         </div>
 
         <div class="col-3">
-          <button class="btn btn-outline-success me-3">
-            Số chẵn cuối cùng
+          <button class="btn btn-outline-success me-3" onclick="compare()">
+            10. So sánh số âm và số dương
           </button>
         </div>
       </div>
       <div class="alert alert-success mt-4" style="display: none"></div>
-    </div>
 
+      <div class="row mt-5">
+        <h5>Đổi vị trí</h5>
+        <div class="col-6">
+          <input
+            type="number"
+            placeholder="Nhập vị trí số 1"
+            class="form-control w-100"
+            id="inputPosition1"
+          />
+        </div>
+
+        <div class="col-6">
+          <input
+            type="number"
+            placeholder="Nhập vị trí số 2"
+            class="form-control w-100"
+            id="inputPosition2"
+          />
+        </div>
+      </div>
+      <div class="mt-3">
+        <button class="btn btn-outline-success" onclick="changePosition()">
+          6. Đổi chỗ
+        </button>
+      </div>
+
+      <div class="alert alert-danger mt-4" style="display: none"></div>
+
+      <div class="row mt-5">
+        <h5>Đếm số lượng số nguyên</h5>
+        <div class="col-6">
+          <input
+            type="number"
+            placeholder="Nhập số thực"
+            class="form-control"
+            id="inputRealNumb"
+          />
+        </div>
+        <div class="col-6">
+          <button class="btn btn-success" onclick="addRealNumb()">
+            Thêm số
+          </button>
+        </div>
+      </div>
+        <div class="alert alert-secondary mt-2 mb-4" id="arr2" style="display: none"></div>
+        <div class="mt-3">
+          <button class="btn btn-outline-success" onclick="countInteger()">
+            9. Đếm số nguyên
+          </button>
+        </div>
+        <div class="alert alert-warning mt-4" style="display: none"></div>
+      
+    </div>
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
